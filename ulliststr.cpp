@@ -178,7 +178,7 @@ std::string *ULListStr::getValAtLoc(size_t loc) const {
     Item* curr = this->head_;
 
     // iterate as many times to get to the correct location
-    for (auto i = 0; i < loc; i++) {
+    for (size_t i = 0; i < loc; i++) {
         // update pointer
         curr = curr->next;
         // if loc is larger than the number of items
